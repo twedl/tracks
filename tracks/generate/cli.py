@@ -184,7 +184,7 @@ def main():
     if args.partition:
         if not args.output:
             parser.error("--partition requires --output to be set to a directory")
-        from .gps_partition import write_trips_partitioned
+        from ..partition import write_trips_partitioned
         summary = write_trips_partitioned(all_trips, Path(args.output))
         tier_summary = ", ".join(f"{tier}={n}" for tier, n in sorted(summary.items()))
         print(

@@ -19,5 +19,5 @@ build-backend = "setuptools.build_meta"
 include = ["tracks*"]
 
 [project.scripts]
-tracks = "tracks.cli:main"
+tracks = "tracks.generate.cli:main"
 tracks-partition = "tracks.partition_cli:main"

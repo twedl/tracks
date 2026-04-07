@@ -4,7 +4,7 @@ import argparse
 import sys
 from pathlib import Path
 
-from .gps_partition import partition_existing_parquet
+from .partition import partition_existing_parquet
 
 
 def main():
