@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Local tooling
+.claude/
+
+# Large data + build artifacts (download/build locally; do not commit)
+custom_files/
+
+# Generated trace outputs
+*.parquet
+trace.csv
+gta_to_comber.csv
+gta_to_comber_map.html
+gta_to_tilbury.csv
+gta_to_tilbury_map.html

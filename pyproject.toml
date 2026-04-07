@@ -1,0 +1,23 @@
+[project]
+name = "tracks"
+version = "0.1.0"
+description = "Generate realistic GPS traces for commercial truck delivery trips"
+requires-python = ">=3.10"
+dependencies = [
+    "requests",
+    "numpy",
+    "pyarrow",
+    "pandas",
+    "hilbertcurve",
+]
+
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["tracks*"]
+
+[project.scripts]
+tracks = "tracks.cli:main"
+tracks-partition = "tracks.partition_cli:main"
